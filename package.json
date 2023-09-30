@@ -3,6 +3,13 @@
   "version": "1.0.0",
   "description": "Production ready express template",
   "main": "src/index.js",
+  "scripts": {
+    "format:check": "prettier . --check",
+    "format:fix": "prettier . --write"
+  },
   "author": "Umair Saleem",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "3.0.3"
+  }
 }
