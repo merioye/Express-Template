@@ -2,14 +2,16 @@ module.exports = {
   env: {
     node: true,
     es2021: true,
+    jest: true,
   },
   extends: [
     'eslint:recommended',
     'plugin:import/recommended',
+    'plugin:jest/recommended',
     'prettier',
     'plugin:prettier/recommended',
   ],
-  plugins: ['import', 'prettier'],
+  plugins: ['import', 'jest', 'prettier'],
   parserOptions: {
     sourceType: 'module',
     ecmaVersion: 'latest',
