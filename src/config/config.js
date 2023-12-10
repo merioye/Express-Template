@@ -1,7 +1,7 @@
 const { config } = require('dotenv');
-const { ENVIRONMENT } = require('../constants');
+const path = require('path');
 
-config({ path: `.env.${process.env.NODE_ENV || ENVIRONMENT.DEV}` });
+config({ path: path.join(__dirname, `../../.env.${process.env.NODE_ENV}`) });
 
 const { PORT, NODE_ENV } = process.env;
 
